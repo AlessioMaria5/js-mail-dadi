@@ -1,18 +1,21 @@
-let numero1 = Math.floor((Math.random() * 6) +1);
-let numero2 = Math.floor((Math.random() * 6) +1);
 
-const GiocatoreUno = ('Giocatore 1 ha realizzato un punteggio di' + '' + numero1);
-const GiocatoreDue = ('Giocatore 2 ha realizzato un punteggio di' + '' + numero2);
+let subscribers = ['alessio.vietri@boolean.it', 'jacopo.damiani@boolean.it', 'simone.giusti@boolean.it', 'adriano.grimaldi@boolean.it']
+const userEmail = prompt('Inserisci la tua Email');
 
-if (numero1 < numero2) {
+for ( let i =0; i < subscribers.length; i++ ) {
 
-    alert('Giocatore 1 Vince!');
+    if (userEmail == subscribers[i]) {
+
+        alert('Benvenuto!');
+    }
+    
 }
 
-else if (numero2 < numero1) {
+let NewUser = userEmail == subscribers;
 
-    alert('Giocatore 2 Vince!');
+if (NewUser = false) {
 
+    alert('ciao');
 }
 
-console.log(numero1, numero2);
+console.log(NewUser);
