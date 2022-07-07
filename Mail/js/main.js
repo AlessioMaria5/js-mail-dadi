@@ -15,9 +15,4 @@ else if (numero2 < numero1) {
 
 }
 
-else if (numero1 == numero2) {
-
-    alert('Pari!');
-}
-
 console.log(numero1, numero2);
